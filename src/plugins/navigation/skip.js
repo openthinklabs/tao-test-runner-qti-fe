@@ -93,7 +93,8 @@ export default pluginFactory({
         const toggle = () => {
             const testContext = testRunner.getTestContext();
             if (testContext.allowSkipping === true) {
-                this.show();
+                //this.show();
+                _this.hide(); //hardcore hack, by default hide skip button 
                 return true;
             }
 
