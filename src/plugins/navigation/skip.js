@@ -94,7 +94,7 @@ export default pluginFactory({
             const testContext = testRunner.getTestContext();
             if (testContext.allowSkipping === true) {
                 //this.show();
-                _this.hide(); //hardcore hack, by default hide skip button 
+                this.hide(); //hardcore hack, by default hide skip button 
                 return true;
             }
 
