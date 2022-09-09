@@ -20,7 +20,7 @@ export default pluginFactory({
 
     //this.getTestRunner().on('loaditem', function(){
     this.getTestRunner()
-      .on("enabletools loaditem renderitem", function () {
+      .on("enabletools loaditem", function () {
         if (document.querySelector(".qti-extendedTextInteraction")) {
           var testContext = self.getTestRunner().getTestContext();
           var testPartId = testContext.testPartId;
